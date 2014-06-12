@@ -14,9 +14,9 @@ RUN \
 
 # Install Scala.
 RUN apt-get install -y wget && \
-    wget -i /root/scala-2.11.1.deb http://www.scala-lang.org/files/archive/scala-2.11.1.deb && \
-    dpkg -i /root/scala-2.11.1.deb && \
-    rm -f /root/scala-2.11.1
+    wget http://www.scala-lang.org/files/archive/scala-2.11.1.deb && \
+    dpkg -i scala-2.11.1.deb && \
+    rm -f scala-2.11.1
 
 # for run
 EXPOSE 80
