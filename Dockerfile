@@ -19,7 +19,6 @@ RUN apt-get install -y wget && \
     rm -f scala-2.11.1
 
 # for run
-EXPOSE 80
 CMD ["/sbin/my_init"]
 
 # cleanup
